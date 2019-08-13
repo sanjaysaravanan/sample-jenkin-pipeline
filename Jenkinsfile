@@ -4,17 +4,17 @@ pipeline {
   stages {
 	  stage('Build') {
 		  steps {
-			echo 'Building..'
+			echo 'Branch Building..'
 		  }
 	  }
 	  stage('Test') {
 		  steps {
-			echo 'Testing..'
+			echo 'Branch Testing..'
 		  }
 	  }
 	  stage('Deploy') {
 		  steps {
-			echo 'Deploying....'
+			echo 'Branch Deploying....'
 		  }
 	  }
   }
@@ -22,12 +22,12 @@ pipeline {
 // Script //
 node {
   stage('Build') {
-	echo 'Building....'
+	echo 'Branch Building....'
   }
   stage('Test') {
-	echo 'Building....'
+	echo 'Branch Building....'
   }
   stage('Deploy') {
-	echo 'Deploying....'
+	echo 'Branch Deploying....'
   }
 }
