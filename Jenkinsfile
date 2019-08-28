@@ -6,9 +6,9 @@ pipeline {
 		maven "MAVEN_HOME"
 	}
   stages {
-  	stage('Test') {
+  	stage('Build') {
 	  steps {
-	  sh 'mvn -version'
+	  sh 'mvn clean install'
 	  }
   	}
   }
